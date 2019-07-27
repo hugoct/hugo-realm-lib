@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A realm lib",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugoct/hugo-realm-lib.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" "
   },
