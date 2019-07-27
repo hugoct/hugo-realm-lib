@@ -1,0 +1,19 @@
+{
+  "name": "hugo-realm-lib",
+  "version": "0.0.1",
+  "description": "A realm lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" "
+  },
+  "author": "Hugo",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-native": "^0.60.4"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
