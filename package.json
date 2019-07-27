@@ -12,7 +12,7 @@
   },
   "author": "Hugo",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "react": "^16.8.6",
     "react-native": "^0.60.4"
   },
