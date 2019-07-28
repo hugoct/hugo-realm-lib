@@ -12,9 +12,10 @@ export const insertMany = (objs, callback) => {
   );
 };
 
-export const insertUpdateMany = (objs, callback) => {
-  NativeModules.libRealm.insertUpdateMany(JSON.stringify(objs), (res, error) =>
-    callback(JSON.parse(res), JSON.parse(error))
+export const insertOrUpdateMany = (objs, callback) => {
+  NativeModules.libRealm.insertOrUpdateMany(
+    JSON.stringify(objs),
+    (res, error) => callback(JSON.parse(res), JSON.parse(error))
   );
 };
 
