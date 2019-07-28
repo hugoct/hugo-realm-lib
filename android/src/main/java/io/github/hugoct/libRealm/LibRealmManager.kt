@@ -1,7 +1,5 @@
 package io.github.hugoct.libRealm
 
-import android.util.Log
-import android.widget.Toast
 import com.facebook.react.bridge.*
 import com.google.gson.Gson
 import io.realm.Realm
@@ -26,7 +24,6 @@ class LibRealmManager(reactContext: ReactApplicationContext) : ReactContextBaseJ
             val users = realm.where(UserSchema::class.java).findAll()
 
             responseCallback.invoke( users.asJSON(), null)
-//            responseCallback.invoke( """[]""", null)
         } catch (e: Exception) {
             responseCallback.invoke("""{}""", e.message.toString())
         }
@@ -47,9 +44,6 @@ class LibRealmManager(reactContext: ReactApplicationContext) : ReactContextBaseJ
 
             val realmUser = realm?.copyToRealm(user)
             realm?.commitTransaction()
-
-            Log.i("Inserted", gson.toJson(user))
-
 
             responseCallback.invoke(gson.toJson(user), false)
         } catch (e: Exception) {

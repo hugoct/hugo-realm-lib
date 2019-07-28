@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" "
   },
   "author": "Hugo",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "react-native": "^0.60.4"
   },
